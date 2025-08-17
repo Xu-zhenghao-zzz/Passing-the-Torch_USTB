@@ -1,0 +1,381 @@
+/* 重定义Bootstrap primary颜色为红色主题 */
+:root {
+  --bs-primary: #c41e3a !important;
+  --bs-primary-rgb: 196, 30, 58 !important;
+}
+
+.bg-primary {
+  background-color: var(--primary-color) !important;
+}
+
+.text-primary {
+  color: var(--primary-color) !important;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary-color), var(--dark-red));
+  border: 2px solid var(--gold);
+  color: white;
+  font-weight: bold;
+  border-radius: 25px;
+  padding: 10px 25px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, var(--dark-red), var(--primary-color));
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(196, 30, 58, 0.4);
+  color: var(--gold);
+}
+
+.btn-outline-primary {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: white;
+}
+
+.badge.bg-primary {
+  background-color: var(--primary-color) !important;
+}
+
+.spinner-border.text-primary {
+  color: var(--primary-color) !important;
+}
+
+/* 红色教育主题样式 */
+:root {
+  --primary-color: #c41e3a; /* 中国红 */
+  --secondary-color: #d4af37; /* 金色 */
+  --accent-color: #8b0000; /* 深红色 */
+  --text-color: #2c2c2c;
+  --light-bg: #fff5f5;
+  --dark-red: #8b0000;
+  --gold: #ffd700;
+}
+
+body {
+  font-family: 'Microsoft YaHei', 'SimSun', 'STSong', serif;
+  color: var(--text-color);
+  line-height: 1.6;
+  background-color: #fafafa;
+}
+
+/* 导航栏样式 */
+.navbar {
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--dark-red) 100%) !important;
+  box-shadow: 0 2px 15px rgba(196, 30, 58, 0.3);
+  border-bottom: 3px solid var(--gold);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: var(--gold) !important;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-nav .nav-link {
+  color: white !important;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link {
+  color: white !important;
+  font-weight: 500;
+  transition: all 0.3s cubic-bezier(.4,0,.2,1);
+  border-radius: 8px;
+  padding: 8px 16px;
+}
+.navbar-nav .nav-link:hover {
+  color: var(--gold) !important;
+  background: rgba(255,255,255,0.08);
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 2px 8px rgba(196,30,58,0.08);
+}
+
+.carousel-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(196, 30, 58, 0.7), rgba(139, 0, 0, 0.7));
+  z-index: 1;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  height: 100%;
+  filter: brightness(0.8);
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  border-radius: 10px;
+  border: 2px solid var(--gold);
+  z-index: 2;
+  position: relative;
+}
+
+.carousel-caption h2 {
+  color: var(--gold);
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* 标题样式 */
+.section-title {
+  position: relative;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  color: var(--primary-color);
+  font-weight: bold;
+  text-align: center;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-color), var(--gold));
+  border-radius: 2px;
+}
+
+.section-title::before {
+  content: '★';
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--gold);
+  font-size: 24px;
+}
+
+/* 卡片样式 */
+.card {
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 2px solid #e0e0e0;
+  border-radius: 18px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(196, 30, 58, 0.06);
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 16px 32px rgba(196, 30, 58, 0.13);
+  border-color: var(--primary-color);
+}
+
+.card-header {
+  background: linear-gradient(135deg, var(--primary-color), var(--dark-red));
+  color: white;
+  border-bottom: 2px solid var(--gold);
+  font-weight: bold;
+  font-size: 1.2rem;
+  letter-spacing: 0.04em;
+}
+
+/* 按钮样式 */
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary-color), var(--dark-red));
+  border: 2px solid var(--gold);
+  color: white;
+  font-weight: bold;
+  border-radius: 25px;
+  padding: 10px 25px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, var(--dark-red), var(--primary-color));
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(196, 30, 58, 0.4);
+  color: var(--gold);
+}
+
+.btn-outline-primary {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: white;
+}
+
+/* 特殊背景区域 */
+.bg-light {
+  background: linear-gradient(135deg, var(--light-bg), #ffe6e6) !important;
+}
+
+/* 团队介绍特殊样式 */
+.team-intro {
+  background: linear-gradient(135deg, #fff5f5, #ffe6e6);
+  border: 3px solid var(--primary-color);
+  border-radius: 20px;
+  padding: 30px;
+  margin: 20px 0;
+  position: relative;
+}
+
+.team-intro::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 60px;
+  background: var(--primary-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold);
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.team-intro h3 {
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* 页脚样式 */
+footer {
+  background: linear-gradient(135deg, #232323, #1a1a1a);
+  border-top: 3px solid var(--gold);
+  box-shadow: 0 -2px 16px rgba(44,44,44,0.12);
+}
+
+footer h5 {
+  color: var(--gold);
+  font-weight: bold;
+  letter-spacing: 0.04em;
+}
+
+footer a {
+  text-decoration: none;
+  color: #ccc;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+footer a:hover {
+  color: var(--gold);
+  text-shadow: 0 2px 8px rgba(196,30,58,0.12);
+}
+footer .d-flex.gap-3.fs-4 a {
+  background: rgba(255,255,255,0.08);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-right: 8px;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+}
+footer .d-flex.gap-3.fs-4 a:hover {
+  background: var(--gold);
+  color: var(--primary-color) !important;
+  box-shadow: 0 2px 8px rgba(196,30,58,0.12);
+}
+/* 合作单位logo样式优化 */
+.container .row .col-lg-2 img,
+.container .row .col-md-4 img {
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(44,44,44,0.10);
+  background: #fff;
+  padding: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.container .row .col-lg-2 img:hover,
+.container .row .col-md-4 img:hover {
+  transform: scale(1.08) rotate(-2deg);
+  box-shadow: 0 8px 24px rgba(196,30,58,0.13);
+}
+
+/* 抗战主题元素 */
+.war-memorial {
+  background: linear-gradient(135deg, rgba(196, 30, 58, 0.1), rgba(139, 0, 0, 0.1));
+  border-left: 5px solid var(--primary-color);
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 0 10px 10px 0;
+}
+
+.war-memorial h4 {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+/* 响应式调整 */
+@media (max-width: 992px) {
+  .carousel-item {
+    height: 340px;
+  }
+  .section-title {
+    font-size: 1.3rem;
+  }
+  .team-intro {
+    padding: 16px;
+  }
+  .card-header {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-item {
+    height: 180px;
+  }
+  .carousel-caption {
+    padding: 12px 8px;
+    font-size: 0.9rem;
+  }
+  .team-intro {
+    padding: 8px;
+    font-size: 0.95rem;
+  }
+  .card {
+    border-radius: 10px;
+  }
+  .card-header {
+    font-size: 0.95rem;
+  }
+  body {
+    font-size: 15px;
+  }
+}
+
+/* 动画效果 */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
